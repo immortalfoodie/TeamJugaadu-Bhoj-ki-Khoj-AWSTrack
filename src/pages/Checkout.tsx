@@ -258,7 +258,7 @@ const Checkout = () => {
   
   const restaurantName = items[0]?.restaurantName || "Restaurant";
   const subtotal = getCartTotal();
-  const deliveryFee = form.watch('deliveryOption') === 'dabbawala' ? 40 : 0;
+  const deliveryFee = form.watch('deliveryOption') === 'dabbawala' ? 20 : 0;
   const taxes = Math.round(subtotal * 0.05);
   const total = subtotal + deliveryFee + taxes;
   
